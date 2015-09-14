@@ -1,0 +1,1 @@
+ALTER TABLE  `prefix_blog` ADD  `blog_subtitle` TEXT NULL ;
