@@ -53,9 +53,8 @@ class PluginBlogsubtitle_ActionBlog extends PluginBlogsubtitle_Inherits_ActionBl
     protected function EventEditBlog() {
 
         $xResult = parent::EventEditBlog();
-        if (is_null($xResult)) {
-            $_REQUEST['blog_subtitle'] = $this->oCurrentBlog->getSubtitle();
-        }
+        $_REQUEST['blog_subtitle'] = $this->oCurrentBlog->getSubtitle();
+        return $xResult;
     }
 
     protected function _updateBlog($oBlog) {
